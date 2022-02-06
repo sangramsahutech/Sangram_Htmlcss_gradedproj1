@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab Test Iframe</title>
+    <link rel="stylesheet" href="lab-test.css">
+</head>
+<body>
+    <img src="Images/Images/Lab-Test/lab-test.jpg" alt="alt img">
+    <section>
+        <div class="lab-test">
+            <form onsubmit="" action="">
+                <!-- <label for="contact"><h2>1. Your contact details</h2></label> -->
+                <article>
+                    <!-- <p><h2>1. Your Contact Details</h2></p> -->
+                    <label for="contact">
+                        <h2>1. Your contact details</h2>
+                    </label>
+                    <input type="text" title="name" placeholder="Full Name" required>
+                    <input type="text" title="patientId" placeholder="Patient Id if exists"><br><br>
+                    <input type="text" title="Contact Number" placeholder="Contact Number" required> 
+                    <input type="email" title="email" placeholder="Email id" required><br><br>
+                    <label for="address">
+                        <h2>2. Address</h2>
+                    </label>
+                    <input type="text" title="H.No" placeholder="H-No" required>
+                    <input type="text" title="Street" placeholder="Street" required><br><br>
+                    <input type="text" title="Area" placeholder="Area" required> <br><br>
+                    <p>District</p>
+                    <select name="District" id="district" required>
+                        <option value="">Choose</option>
+                        <option value="Bangalore Urban">Bangalore Urban</option>
+                        <option value="Bangalore Rural">Bangalore Rural</option>
+                        <option value="Ramnagar">Ramnagar</option>
+                    </select><br><br>
+                </article>
+                <article>
+                    <p>3. Choose the test type</p>
+                    <p>Check atleast one box without fail</p>
+                    <input type="checkbox" id="c1" name="option1" value="CBC">
+                    <label for="c1">CBC</label>
+                    <br>
+                    <input type="checkbox" id="c2" name="option2" value="Complete Urine">
+                    <label for="c2">Complete Urine</label>
+                    <br>
+                    <input type="checkbox" id="c3" name="option3" value="Lipid Profile">
+                    <label for="c3">Lipid Profile</label>
+                    <br>
+                    <input type="checkbox" id="c4" name="option4" value="Thyroid Stimulating Hormone(TSH)">
+                    <label for="c4">Thyroid Stimulating Hormone(TSH)</label>
+                    <br>
+                    <input type="checkbox" id="c5" name="option5" value="Glucose Test">
+                    <label for="c5">Glucose Test</label>
+                </article>
+                <article>
+                    <p>4. Do you want a hard copy of the report also?</p>
+                    <input type="radio" id="c5" name="option" value="True" required>
+                    <label for="c5">Yes</label>
+                    <br>
+                    <input type="radio" id="c6" name="option" value="False">
+                    <label for="c6">No</label>
+                </article>
+                <article>
+                    <p>5. Select Your Comfortable Date and Time</p>
+                    <input type="datetime-local" value="datetime-local" required>
+                </article>
+            </form>
+        </div>
+    </section>
+</body>
+</html>

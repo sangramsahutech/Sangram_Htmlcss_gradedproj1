@@ -1,0 +1,188 @@
+body{
+    background-color: honeydew;
+}
+header{
+    font-weight: bolder;
+    color: rgb(255, 255, 255);
+    font-size: xx-large;
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.685);
+}
+
+#navigate{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0%;
+    z-index: 1;
+}
+.menu{
+    margin: 0%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.menu li a{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+.menu li{
+    padding: 10px;
+    display: inline-block;
+}
+.menu li:hover{
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.menu li:nth-child(2):hover #dropdown_1,
+.menu li:nth-child(3):hover #dropdown_2
+{
+    display: block;
+}
+#dropdown_1,
+#dropdown_2{
+    width: auto;
+    max-width: 150px;
+    display: none;
+    background-color: whitesmoke;
+    padding: 0%;
+    position: absolute;
+    top: 43px;
+}
+#dropdown_1 li, #dropdown_2 li{
+    background-color: whitesmoke;
+    margin: 0;
+}
+
+#dropdown_1 li a, #dropdown_2 li a{
+    color: blue;
+    font-size: 15px;
+}
+#dropdown_3:hover, #dropdown_4:hover, #dropdown_5:hover, #dropdown_6:hover,
+#dropdown_7:hover, #dropdown_8:hover, #dropdown_9:hover, #dropdown_10:hover{
+    color: whitesmoke;
+    font-size: 15px;
+    margin: 0px;
+    float: none;
+    box-sizing: border-box; 
+    position: relative;
+    display: list-item;
+    background-color: rgb(0, 2, 1);
+}
+
+.slider-frame{
+    width: 88%;
+    height: 400px;
+    border: 2px steelblue solid;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 10px;
+    overflow: hidden;
+}
+@-webkit-keyframes slide_animation{
+    0% {right: -2400px;}
+    10% {right: -2400px;}
+    20% {right: -1200px;}
+    30% {right: -1200px;}
+    40% {right: 0px;}
+    50% {right: 0px;}
+    60% {right: 1200px;}
+    70% {right: 1200px;}
+    80% {right: 2400px;}
+    90% {right: 2400px;}
+    100% {right: -2400px;}
+}
+.slide-images{
+    width: 6000px;
+    height: 800px;
+    margin: 0 0 0 -2400px;
+    position: relative;
+    -webkit-animation-name: slide_animation;
+    -webkit-animation-duration: 20s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction:normal;
+    -webkit-animation-play-state: running;
+}
+.image-container{
+    height: 1200px;
+    width: 1200px;
+    position: relative;
+    float: left;
+}
+#Covid-Care, #Diabetes-Care{
+    margin: 10px;
+    overflow-x: auto;
+    white-space: nowrap;
+    overflow-x: scroll;
+}
+.covid, .diabetes{
+    position: relative;
+    border-radius: 10px;
+    margin: 15px;
+    width: 300px;
+    height: 200px;
+    border: 2px;
+    display: inline-block;
+    background-color: lightgray;
+}
+.covid:hover, .diabetes:hover{
+    position: relative;
+    border-radius: 10px;
+    margin: 5px;
+    width: 320px;
+    height: 210px;
+    border: 2px;
+    display: inline-block;
+    background-color: lightgray;
+}
+.covid h4,
+.diabetes h4{
+    margin: 0;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+.covid:hover h4,
+.diabetes:hover h4{
+    margin: 0;
+    margin-left: 5px;
+    margin-top: 5px;
+    font-size: large;
+}
+.covid img, 
+.diabetes img{
+    border-radius: 10px;
+    width: 285px;
+    height: 100px;
+    top:0%;
+    margin: 5px;
+}
+.overlay {
+    color: blue;
+    margin:0px;
+    margin-left: 5px;
+    text-align:left;
+}
+.overlay button{
+    width: 285px;
+    border: 2px solid blue;
+    border-radius: 7px;
+    margin: 5px;
+    margin-top: 0px;
+    color: goldenrod;
+    font-size: medium;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: rgb(212, 198, 198);
+}
+.overlay button:active{
+    background-color: rgb(250, 234, 230);
+    border: 2px solid rgb(0, 255, 76);
+}
+
+footer{
+    background-color: rgb(0,0,0);
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    font-size: 16px;
+    position: relative;
+    bottom: 0%;
+    text-align: center;
+}
