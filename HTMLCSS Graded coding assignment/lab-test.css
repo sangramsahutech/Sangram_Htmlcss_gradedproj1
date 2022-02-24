@@ -30,6 +30,8 @@ img{
     position: -webkit-sticky;
     position: fixed;
     right: 0%;
+    width: 50%;
+    height: auto;
 }
 article{
     min-width: 300px;
